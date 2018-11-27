@@ -1,0 +1,102 @@
+<?php
+    require_once('connect.php');
+    session_start();
+?>
+
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Rajdhani" rel="stylesheet">
+
+</head>
+
+<body  style="background-color: #e0e0d1;">
+
+    <div class="top" style="background-color: #e0e0d1; width:100%;">
+        <div class="topLeft"></div>
+        <div class="topCenter" style="padding-left:15%; padding-top: 5%"> <img src="logo11.png"></div>
+        <div class="topRight">
+            <a class="sign" style="padding-left: 230px;" href="signup.php" id=""> 
+               SIGN UP
+            </a>
+            <a class="sign" style="padding-left: 50px;" href="#" id="">
+               LOG IN 
+            </a> 
+            <a href="#" id="">
+                    <img style="width:40px; height:40px; padding-left: 50px; padding-top: 20px;" src="basket.png">
+                </a>
+            <div style="clear:both;"></div>
+        </div>
+        
+     </div>
+
+    <div style="background-color:  #ccccb3; width: 100%; height:40px; padding-top: 20px; font-family: 'Rajdhani', sans-serif"
+        ;>
+        <center>
+            <b><a class="bar" href="index.php">HOME</a></b>
+            <b><a class="bar" href="#">ABOUT</a></b>
+            <div class="dropdown">
+                <b><a class="dropbtn bar" href="#">CLOTHING</a></b>
+                <div class="dropdown-content">
+                    <a class="submenu" href="#"> NEW ARRIVAL</a>
+                    <a class="submenu" href="#"> MOST POPULAR</a>
+                    <a class="submenu" href="#"> LONG DRESS</a>
+                    <a class="submenu" href="#"> MINI DRESS</a>
+                    <a class="submenu" href="#"> COAT</a>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <b><a class="dropbtn bar" href="#">OCCASIONS</a></b>
+                <div class="dropdown-content1">
+                    <a class="submenu" href="wedding.html"> WEDDING GUEST</a>
+                    <a class="submenu" href="bdparty.html"> BIRTHDAY PARTY</a>
+                    <a class="submenu" href="gala.html"> GALA DINNER</a>
+                    <a class="submenu" href="graduation.html"> GRADUATION</a>
+                    <a class="submenu" href="prom.html"> PROM</a>
+                    <a class="submenu" href="datenight.html"> NIGHT CLUB</a>
+                </div>
+            </div>
+            <b><a class="bar" href="#">CONTACT US</a></b>
+        </center>
+
+    </div>
+
+    <div style="background-color: #e0e0d1;">.
+        <center>
+            <div style="margin-top:100px; border:2px solid grey; width: 500px; height: 300px; ">
+                <center><b style="font-size:27px;  font-family: 'Rajdhani', sans-serif;">LOG IN</b></center>
+                <form style="font-size:25px;  margin-left: 40px; font-family: 'Rajdhani', sans-serif" method="POST" action="login1.php">
+                    <center>
+                        <div style="margin-top:30px;">
+                            <div style="display:inline-block;">
+                                Username: <br>
+                                <input style="background-color:white; width:100%; font-size:27px; font-family: 'Rajdhani', sans-serif;"
+                                    type="text" name="username" value=""><br>
+                            </div>
+                            <div style="display:inline-block; padding-left: 10px;">
+                                Password: <br>
+                                <input style="background-color:white; font-size:27px; font-family: 'Rajdhani', sans-serif;"
+                                    type="password" name="password" value=""><br>
+                            </div>
+                        </div>
+                    </center>
+                    <br>
+                    <center>
+                    <div>
+                       <!--  <a href="#"><button style="width:350px; height:50px; background-color:grey; font-size:27px; font-family: 'Rajdhani', sans-serif; color:white;">
+                                LOG IN</button><br><br></a> -->
+                        <input  style="width:350px; height:50px; background-color:grey; font-size:27px; font-family: 'Rajdhani', sans-serif; color:white;" type="submit" id="button" name="login" value="LOG IN">
+                    </div>
+                </center>
+                </form>
+               
+                <div style="clear:left"></div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
